@@ -1,8 +1,13 @@
-# Basic Sample Hardhat Project
+# Pre-requisite
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+1. get api @ alchemyapi.io
+2. setup private key with Ropsten
 
-Try running some of the following tasks:
+# Setup
+
+```shell
+npm i
+```
 
 ```shell
 npx hardhat accounts
@@ -12,4 +17,10 @@ npx hardhat test
 npx hardhat node
 node scripts/sample-script.js
 npx hardhat help
+```
+
+# Deploy
+
+```shell
+npx hardhat run --network ropsten scripts/deploy-gopx.js
 ```
